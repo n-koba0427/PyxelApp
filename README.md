@@ -35,7 +35,7 @@ pyxel_app my_new_game
 
 ### ディレクトリ構造
 
-/```
+```
 my_new_game
 ├── entry.py
 └── pkg
@@ -44,7 +44,7 @@ my_new_game
     ├── data
     │   └── img.pyxres
     └── utils.py
-/```
+```
 
 ### 実行方法
 

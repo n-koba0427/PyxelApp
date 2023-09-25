@@ -1,6 +1,6 @@
 # PyxelApp
 
-`PyxelApp`はPyxelのアプリケーションテンプレートを簡単に作成するbashコマンドを提供します。
+[`PyxelApp`](https://pypi.org/project/pyxel-app/)はPyxelのアプリケーションテンプレートを簡単に作成するbashコマンドを提供します。
 
 ## 目次
 
@@ -32,6 +32,30 @@ pyxel_app my_new_game
 ```
 
 これにより、`my_new_game`という名前のpyxelアプリケーションテンプレートが現在のディレクトリに作成されます。
+
+### ディレクトリ構造
+
+/```
+my_new_game
+├── entry.py
+└── pkg
+    ├── __init__.py
+    ├── app.py
+    ├── data
+    │   └── img.pyxres
+    └── utils.py
+/```
+
+### 実行方法
+
+テンプレートを作成した後、以下のコマンドを実行することで、Pyxelアプリケーションを起動することができます。
+
+/```
+python my_new_game/entry.py
+/```
+
+このコマンドにより、`entry.py`が実行され、Pyxelアプリケーションが起動します。
+
 
 ## 機能
 

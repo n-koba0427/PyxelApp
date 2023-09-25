@@ -2,7 +2,9 @@ import os
 import click
 import shutil
 
-TEMPLATE_DIR = "template"
+import importlib.resources as pkg_resources
+
+TEMPLATE_DIR = str(pkg_resources.files(__package__).joinpath("template"))
 
 def replace_placeholders(root_dir, product_name):
     for dirpath, dirnames, filenames in os.walk(root_dir):

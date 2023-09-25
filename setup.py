@@ -2,16 +2,16 @@ from setuptools import setup, find_packages
 
 setup(
     name='pyxel-app',
-    version='0.0.1',
+    version='0.1.0',
     packages=find_packages(),
-    py_modules=['pyxel_app'],
+    package_data={'PyxelApp': ['template/*', "template/pkg/*", "template/pkg/data/*"]},
     install_requires=[
         'Click',
         'pyxel-universal-font',
     ],
     entry_points={
         "console_scripts":[
-            "pyxel_app=pyxel_app:pyxel_app",
+            "pyxel_app=PyxelApp.pyxel_app:pyxel_app",
         ],
     },    
     author="naoyashi",
